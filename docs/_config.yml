@@ -1,0 +1,149 @@
+# GitHub Pages Configuration for Battle for Wesnoth
+theme: jekyll-theme-cayman
+title: "Battle for Wesnoth — Complete Gaming Experience"
+description: "Turn-based strategy game with offline activation, complete campaigns, and comprehensive modding support. Download and play immediately!"
+
+# SEO and Social Media
+url: "https://wesnoth-devs.github.io"
+baseurl: "/BattleforWesnoth"
+repository: "Wesnoth-Devs/BattleforWesnoth"
+
+# Social Media Links
+github_username: Wesnoth-Devs
+twitter_username: WesnothGame
+discord_invite: wesnoth
+
+# Content Settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-relative-links
+
+# SEO Plugin Settings
+logo: /assets/images/logo.png
+social:
+  name: Battle for Wesnoth
+  links:
+    - https://github.com/Wesnoth-Devs/BattleforWesnoth
+    - https://discord.gg/wesnoth
+    - https://wesnoth.org
+    - https://twitter.com/WesnothGame
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXXXX-X
+
+# Navigation
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "Installation"
+    url: "/installation"
+  - title: "Gameplay Guide"
+    url: "/gameplay"
+  - title: "Modding"
+    url: "/modding"
+  - title: "Community"
+    url: "/community"
+
+# Footer Links
+footer_links:
+  - title: "GitHub"
+    url: "https://github.com/Wesnoth-Devs/BattleforWesnoth"
+    icon: "github"
+  - title: "Discord"
+    url: "https://discord.gg/wesnoth"
+    icon: "discord"
+  - title: "Official Site"
+    url: "https://wesnoth.org"
+    icon: "web"
+
+# Build Settings
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - node_modules/
+  - .sass-cache/
+  - .jekyll-cache/
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  factions:
+    output: true
+    permalink: /:collection/:name/
+  campaigns:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "factions"
+    values:
+      layout: "faction"
+  - scope:
+      path: ""
+      type: "campaigns"
+    values:
+      layout: "campaign"
+
+# Custom Variables
+game:
+  name: "Battle for Wesnoth"
+  version: "1.18.0"
+  platforms:
+    - "Windows"
+    - "macOS"
+    - "Linux"
+  genres:
+    - "Strategy"
+    - "Turn-based"
+    - "Fantasy"
+  features:
+    - "Offline Play"
+    - "Campaign Mode"
+    - "Multiplayer"
+    - "Map Editor"
+    - "Modding Support"
+
+# Keywords for SEO
+keywords:
+  - "battle for wesnoth"
+  - "turn-based strategy"
+  - "offline strategy game"
+  - "fantasy strategy"
+  - "tactical combat"
+  - "campaign mode"
+  - "multiplayer strategy"
+  - "map editor"
+  - "modding support"
+  - "free strategy game"
+  - "open source game"
+  - "hex-based combat"
+  - "unit advancement"
+  - "scenario editor"
+  - "cross-platform game" 
